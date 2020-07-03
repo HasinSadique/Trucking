@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="15dp"
+    >
+    <TextView
+        android:id="@+id/TextView_AppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Revealer"
+        android:textSize="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        />
+    <ImageView
+        android:id="@+id/ImageView_Logo"
+        android:layout_width="wrap_content"
+        android:layout_alignLeft="@id/TextView_AppName"
+        android:layout_alignRight="@id/TextView_AppName"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/TextView_AppName"
+
+        />
+    <ImageView
+        android:id="@+id/ImageView_2nd"
+        android:layout_width="wrap_content"
+        android:layout_alignLeft="@id/TextView_AppName"
+        android:layout_alignRight="@id/TextView_AppName"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/ImageView_Logo"
+        />
+    <Button
+        android:id="@+id/Button_TakePicture"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ImageView_Logo"
+        android:layout_marginTop="100dp"
+        android:text="Take Picture"
+        android:layout_alignRight="@id/Button_SelectFromGallery"
+        android:layout_alignLeft="@id/Button_SelectFromGallery"
+        />
+    <Button
+        android:id="@+id/Button_SelectFromGallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Button_TakePicture"
+        android:layout_centerInParent="true"
+        android:text="Select from Gallery"
+        android:layout_marginTop="15dp"
+        android:onClick="secondPic"
+        />
+    <TextView
+        android:id="@+id/TextView_WantOthersToFindYou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Button_SelectFromGallery"
+        android:text="Want others to find you?"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        />
+</RelativeLayout>

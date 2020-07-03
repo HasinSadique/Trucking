@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationLayout"
+    android:padding="50dp"
+    >
+    <TextView
+        android:id="@+id/TextView_Register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_marginBottom="40dp"
+        />
+    <EditText
+        android:id="@+id/EditText_FullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Full name"
+        android:layout_below="@id/TextView_Register"
+        />
+    <EditText
+        android:id="@+id/EditText_Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="E-mail"
+        android:layout_below="@id/EditText_FullName"
+
+        />
+    <EditText
+        android:id="@+id/EditText_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mobile"
+        android:layout_below="@id/EditText_Email"
+
+        />
+    <EditText
+        android:id="@+id/EditText_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:layout_below="@id/EditText_mobile"
+
+        />
+    <EditText
+        android:id="@+id/EditText_ConfirmPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirm Password"
+        android:layout_below="@id/EditText_pass"
+
+        />
+    <Button
+        android:id="@+id/Button_Register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/EditText_ConfirmPass"
+        android:layout_centerHorizontal="true"
+        android:onClick="Register"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an account? Login"
+        android:layout_below="@id/Button_Register"
+        android:layout_centerHorizontal="true"
+        android:onClick="goLoginPage"
+        />
+
+</RelativeLayout>

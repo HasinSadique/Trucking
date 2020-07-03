@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AppHomePageLayout"
+    android:padding="15dp"
+    >
+    <RelativeLayout
+        android:id="@+id/RelativeLayout_Booking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffcc"
+        android:padding="15dp"
+        >
+        <TextView
+            android:id="@+id/TextView_WhatsYour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="What's your load and unload location?"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            style="@style/TextColor"
+            android:gravity="center"
+            />
+        <EditText
+            android:id="@+id/EditText_LoadingLocation"
+            android:layout_width="match_parent"
+            android:hint="Search Load Location"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TextView_WhatsYour"
+            />
+        <EditText
+            android:id="@+id/EditText_UnloadingLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search Unload Location"
+            android:layout_below="@id/EditText_LoadingLocation"
+
+            />
+        <TextView
+            android:id="@+id/TextView_TruckType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Truck Type"
+            android:textSize="20dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            style="@style/TextColor"
+            android:textStyle="bold"
+            android:layout_below="@id/EditText_UnloadingLocation"
+            />
+
+        <RadioGroup
+            android:id="@+id/RadioGrooup_HeightandWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/TextView_TruckType"
+            >
+
+            <RadioButton
+                android:id="@+id/radioButton_1TON"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="1 TON"
+                android:gravity="center"
+                />
+
+            <RadioButton
+                android:id="@+id/radioButton_2TON"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="2 TON"
+                android:gravity="center"
+                />
+
+            <RadioButton
+                android:id="@+id/radioButton_3TON"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3 TON"
+                android:layout_weight="1"
+                android:gravity="center"
+                />
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5 ton"
+                android:layout_weight="1"
+                android:gravity="center"
+                />
+        </RadioGroup>
+        <RadioGroup
+            android:id="@+id/RadioGrooup_HeightandLength"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/RadioGrooup_HeightandWeight"
+            >
+            <RadioButton
+                android:id="@+id/radioButton_1Feet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1 Feet"
+                android:layout_weight="1"
+                android:gravity="center"
+                />
+
+            <RadioButton
+                android:id="@+id/radioButton_3Feet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3 Feet"
+                android:layout_weight="1"
+                android:gravity="center"
+                />
+
+            <RadioButton
+                android:id="@+id/radioButton_5Feet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5 feet"
+                android:layout_weight="1"
+                android:gravity="center"
+                />
+            <RadioButton
+                android:id="@+id/radioButton_8Feet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="8 Feet"
+                android:layout_weight="1"
+                android:gravity="center"
+                />
+        </RadioGroup>
+        <Button
+            android:id="@+id/Button_Post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/RadioGrooup_HeightandLength"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:textStyle="bold"
+            android:text="Post"
+            android:onClick="Post"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/RelativeLAyout_ActiveTrips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RelativeLayout_Booking"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentBottom="true"
+        >
+        <TextView
+            android:id="@+id/TextView_ActiveTrips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Active Trips"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:background="#e68a00"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No trips currently."
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/TextView_ActiveTrips"
+            />
+
+
+    </RelativeLayout>
+
+    <com.nightonke.boommenu.BoomMenuButton
+        android:id="@+id/boomMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        app:bmb_buttonEnum="textOutsideCircle"
+        app:bmb_piecePlaceEnum="piecePlace_dot_3_1"
+        app:bmb_buttonPlaceEnum="buttonPlace_sc_3_1"/>
+
+
+</RelativeLayout>
