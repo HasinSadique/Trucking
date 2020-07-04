@@ -62,6 +62,6 @@ public class AppHomePageLayout extends AppCompatActivity {
         String loadinglocation = LoadLocation.getText().toString();
         String unLoadingLocation = unLoadLocation.getText().toString();
         //put these loading and unloading strings in card view
-
+        
     }
 }
