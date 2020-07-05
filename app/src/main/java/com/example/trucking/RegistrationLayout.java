@@ -71,7 +71,7 @@ public class RegistrationLayout extends AppCompatActivity {
     }
 
     private void RegisterUser(String fullname, String email, String mobile, String pass, String confirmpass) {
-        if(pass==confirmpass){
+        if(pass.equals(confirmpass)){
             User user= new User(fullname,email,mobile,pass);
 
             mAuth.createUserWithEmailAndPassword(email, pass)
@@ -82,6 +82,8 @@ public class RegistrationLayout extends AppCompatActivity {
                                 // Sign in success, update UI with the signed-in user's information
 //                                Log.d(TAG, "createUserWithEmail:success");
                                 FirebaseUser user = mAuth.getCurrentUser();
+                                Toast.makeText(getApplicationContext(), "Registered.",
+                                        Toast.LENGTH_SHORT).show();
                                 updateUI(user);
                             } else {
                                 // If sign in fails, display a message to the user.
