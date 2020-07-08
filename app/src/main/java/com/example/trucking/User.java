@@ -2,7 +2,9 @@ package com.example.trucking;
 
 public class User {
     private String Fullname,Email,Mobile,Pass;
+    public User(){
 
+    }
     public User(String fullname, String email, String mobile, String pass) {
         Fullname = fullname;
         Email = email;

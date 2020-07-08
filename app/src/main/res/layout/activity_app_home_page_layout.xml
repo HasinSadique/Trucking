@@ -8,6 +8,7 @@
     tools:context=".AppHomePageLayout"
     android:padding="15dp"
     >
+
     <RelativeLayout
         android:id="@+id/RelativeLayout_Booking"
         android:layout_width="match_parent"
