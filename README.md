@@ -7,14 +7,14 @@ Trucking is an android application used by people for hiring trucks for transpor
 Database Used: firebase real-time database. 
 Programming Language: Java
 
-Screenshot of Splash Screen
+**Screenshot of Splash Screen**
 ![](https://github.com/HasinSadique/Trucking/blob/master/git-repo-images/Splash-Screen.jpg)
 
-Screenshot of Login Screen
+**Screenshot of Login Screen**
 ![](https://github.com/HasinSadique/Trucking/blob/master/git-repo-images/Login-Page.jpg)
 
-Screenshot of HomePage Screen
+**Screenshot of HomePage Screen**
 ![](https://github.com/HasinSadique/Trucking/blob/master/git-repo-images/Home-page.jpg)
 
-Screenshot of HomePage Screen with Left drawer
+**Screenshot of HomePage Screen with Left drawer**
 ![](https://github.com/HasinSadique/Trucking/blob/master/git-repo-images/Homepage-with-drawer.jpg)
