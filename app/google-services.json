@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "946959709939",
+    "firebase_url": "https://trucking-2adcd.firebaseio.com",
+    "project_id": "trucking-2adcd",
+    "storage_bucket": "trucking-2adcd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:946959709939:android:88dcbcd7c2323c47e26986",
+        "android_client_info": {
+          "package_name": "com.example.trucking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "946959709939-qp7aueaveimlc1bhrefa4mbs24afjtsi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCntFlnBrZX3t88RaEzAxtuqp8ZzQAipms"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "946959709939-qp7aueaveimlc1bhrefa4mbs24afjtsi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

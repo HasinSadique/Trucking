@@ -9,18 +9,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SplashScreen"></activity>
-        <activity android:name=".RegistrationLayout" />
         <activity
-            android:name=".LoginActivity"
-            android:label="Login">
+            android:name=".SplashScreen"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AppHomePageLayout" />
+
+        <activity android:name=".RegistrationLayout" />
+
+        <activity
+            android:name=".LoginActivity"
+            android:label="Login">
+
+        </activity>
+        <activity
+            android:name=".AppHomePageLayout"
+            android:theme="@style/AppTheme.NoActionBar"
+
+            />
     </application>
 
 </manifest>

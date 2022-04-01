@@ -14,12 +14,31 @@
         android:layout_centerInParent="true"
         android:gravity="center"
         >
+        <ImageView
+            android:id="@+id/ImageView_LoginLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:src="@drawable/trucking_logo"
+            />
+        <TextView
+            android:id="@+id/TextView_AppName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ImageView_LoginLogo"
+            android:text="Trucking"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:background="@drawable/roundededittext"
+            />
 
         <EditText
             android:id="@+id/EditText_Username_Email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Username/E-mail"
+            android:layout_marginTop="100dp"
+            android:layout_below="@id/ImageView_LoginLogo"
             />
 
         <EditText
@@ -27,7 +46,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/EditText_Username_Email"
-            android:hint="password" />
+            android:hint="password"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"
+            />
 
         <Button
             android:id="@+id/Button_Login"
@@ -36,6 +58,7 @@
             android:layout_below="@id/EditText_password"
             android:layout_centerHorizontal="true"
             android:text="Login"
+            android:background="@drawable/roundedbutton"
             android:onClick="Login"
             />
 
@@ -44,6 +67,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/Button_Login"
+            android:layout_marginTop="50dp"
             android:layout_centerHorizontal="true"
             android:text="Register"
             android:onClick="register"/>

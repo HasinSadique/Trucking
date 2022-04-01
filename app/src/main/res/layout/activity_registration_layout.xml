@@ -66,6 +66,7 @@
         android:layout_below="@id/EditText_ConfirmPass"
         android:layout_centerHorizontal="true"
         android:onClick="Register"
+        android:background="@drawable/roundedbutton"
         />
     <TextView
         android:layout_width="wrap_content"
@@ -74,6 +75,7 @@
         android:layout_below="@id/Button_Register"
         android:layout_centerHorizontal="true"
         android:onClick="goLoginPage"
+        android:layout_marginTop="20dp"
         />
 
 </RelativeLayout>
